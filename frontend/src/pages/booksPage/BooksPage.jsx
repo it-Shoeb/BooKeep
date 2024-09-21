@@ -8,7 +8,7 @@ export default function BooksPage() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        let res = await axios.get("https://bookeep-ifhl.onrender.com");
+        let res = await axios.get("localhost:5000/api/books");
         setState(res.data);
         console.log(res.data);
       } catch (error) {
