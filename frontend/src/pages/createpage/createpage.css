@@ -1,0 +1,54 @@
+.create {
+  height: calc(100vh - 41px);
+}
+
+.create-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+}
+
+.create-container form {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  width: 50%;
+  margin-inline: auto;
+  gap: 1rem;
+}
+
+.create-container form .productName,
+.create-container form .productPrice,
+.create-container form .productImage {
+  padding: 0.8rem;
+  border: none;
+  background-color: rgb(195, 255, 105);
+  outline: none;
+  border-radius: .5rem;
+}
+.create-container form .productName:focus {
+    background-color: rgb(223, 255, 175);
+}
+.create-container form .productPrice:focus {
+    background-color: rgb(223, 255, 175);
+}
+.create-container form .productImage:focus {
+    background-color: rgb(223, 255, 175);
+}
+
+.create-container form input[type="submit"] {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+}
+
+.create-container form input[type="submit"]:focus {
+    background-color: rgb(42, 185, 42);
+}
