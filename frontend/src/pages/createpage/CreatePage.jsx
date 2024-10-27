@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from "react";
+
+import './createPage.css'
+
 import { Outlet } from "react-router-dom";
 
 import { useNavigate } from "react-router-dom";
 
 import axios from "axios";
-
-import "./createPage.css";
 import { useState } from "react";
 
 import { ToastContainer, toast } from "react-toastify";
